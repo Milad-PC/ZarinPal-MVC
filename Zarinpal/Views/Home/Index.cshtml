@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="card">
+        <div class="card-header">تست درگاه زرین پال</div>
+        <div class="card-body">
+            <form action="@Url.Action("SendReq")" class="form-control" method="post">
+                <div class="row form-group">
+                    <label for="Amount" class="col-5">مبلغ</label>
+                    <input type="number" name="Amount" class="form-control col-12" placeholder="مبلغ را وارد کنید" />
+                </div>
+                <div class="form-group mt-2">
+                    <input type="submit" class="btn btn-success" value="ارسال به درگاه"/>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">تهیه شده توسط لایت کمپانی</div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿@model System.Web.Mvc.JsonResult
+@{
+    ViewBag.Title = "Verfication";
+}
+
+<div class="row">
+    <div class="card @(ViewBag.Status == 100 ? "bg-success":"bg-warning") ">
+        <div class="card-header">@ViewBag.Message</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">کد رهگیری</div>
+                <div class="col-6">@ViewBag.RefId</div>
+            </div>
+            <div class="row">
+                <div class="col-6">کد نتیجه</div>
+                <div class="col-6">@ViewBag.Status</div>
+            </div>
+        </div>
+        <div class="card-footer">تهیه شده توسط لایت کمپانی</div>
+    </div>
+</div>
+
+<script>
+    console.log(@Model.ToString());
+</script>
