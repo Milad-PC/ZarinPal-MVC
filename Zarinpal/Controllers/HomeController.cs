@@ -21,7 +21,7 @@ namespace Zarinpal.Controllers
             //Amount Bayad Be TOMAN Bashe
             ZarinPal.ZarinPal zarinpal = ZarinPal.ZarinPal.Get();
 
-            String MerchantID = "71c705f8-bd37-11e6-aa0c-000c295eb8fc";//Code Dargah ZarinPal
+            String MerchantID = "71c705f8-0000-0000-0000-0000000";//Code Dargah ZarinPal
             String CallbackURL = "https://localhost:44324/Home/Verfication";
             String Description = "لایت کمپانی";
 
@@ -60,7 +60,7 @@ namespace Zarinpal.Controllers
             var zarinpal = ZarinPal.ZarinPal.Get();
 
             String Authority = collection["Authority"];
-            String MerchantID = "71c705f8-bd37-11e6-aa0c-000c295eb8fc";
+            String MerchantID = "71c705f8-0000-0000-0000-0000000";
 
             //Read Order From DataBase
             Order ord = db.Orders.FirstOrDefault(o => o.Authority == Authority);
