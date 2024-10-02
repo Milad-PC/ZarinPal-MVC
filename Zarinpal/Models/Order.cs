@@ -42,6 +42,7 @@ namespace Zarinpal
          * 0 : وارد درگاه نشد
          */
         public int Status { get; set; } = 0;
+        public DateTime OrderDate { get; set; } = DateTime.Now;
         //UserId ,ProductId
     }
 }
